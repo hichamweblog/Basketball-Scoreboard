@@ -1,0 +1,131 @@
+/* Reset CSS & General Styles */
+html {
+	box-sizing: border-box;
+	height: 100%;
+}
+
+html:focus-within {
+	scroll-behavior: smooth;
+}
+
+*,
+*::before,
+*::after {
+	box-sizing: inherit;
+	margin: 0;
+	padding: 0;
+}
+
+body {
+	min-height: 100%;
+	text-rendering: optimizeSpeed;
+	font-family: 'Verdana V2 V1', sans-serif;
+	font-weight: 400;
+	line-height: 1.5;
+	background: #1b244a;
+	color: #eeeeee;
+	display: grid;
+	place-content: center;
+}
+
+p,
+button {
+	font-family: 'Cursed Timer ULiL', sans-serif;
+	text-align: center;
+}
+
+/* Container */
+.container {
+	padding: 4rem;
+	display: grid;
+	grid-template-columns: 1fr;
+	gap: 4rem;
+	max-width: 67rem;
+	margin: 0 auto;
+	place-content: center;
+}
+
+@media (min-width: 44rem) {
+	.container {
+		grid-template-columns: 1fr 1fr;
+		gap: 4rem;
+	}
+
+	.btn-secondary {
+		grid-column: 1/-1;
+	}
+}
+
+/* Components Styles */
+.team__title {
+	text-align: center;
+	font-size: 2.5rem;
+	font-weight: 700;
+	line-height: 2.24rem;
+	margin-bottom: 1.3rem;
+}
+
+.score__container {
+	background: #080001;
+	padding: 1rem;
+	margin-bottom: 2.2rem;
+	min-width: 14rem;
+	max-width: 28rem;
+	display: grid;
+	place-content: center;
+	transition: all ease-out 0.3s;
+}
+
+.score {
+	color: #f94f6d;
+	text-align: center;
+	padding: 1rem;
+	font-size: 5.625rem;
+	transition: all ease-out 0.3s;
+}
+
+/* buttons */
+.buttons {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	gap: 0.8rem;
+}
+
+.btn {
+	border-radius: 0.3125rem;
+	padding: 0.6rem;
+	text-align: center;
+	font-size: 1.5rem;
+	line-height: 1.73825rem;
+	cursor: pointer;
+	transition: all ease-out 0.1s;
+}
+
+.btn:active {
+	box-shadow: 0 0 10px #0ebac5;
+}
+
+.btn-primary {
+	border: 2px solid #9aabd8;
+	color: #9aabd8;
+	background: none;
+}
+
+.btn-secondary {
+	font-family: inherit;
+	font-weight: 700;
+	place-self: center;
+	color: #1b244a;
+	background-color: #eeeeee;
+	border: 0;
+}
+
+/* states */
+.highlight {
+	box-shadow: #9aabd8d1 0px 5px 20px;
+}
+
+.equal {
+	box-shadow: #9aabd8d3 0px 2px 8px 0px;
+}

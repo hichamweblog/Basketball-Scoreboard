@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link href="https://fonts.cdnfonts.com/css/cursed-timer-ulil" rel="stylesheet">
+  <link href="https://db.onlinewebfonts.com/c/99e29472e14a03dfe0cc0d871f44614b?family=Verdana+Multilingual+W99+Bold"
+    rel="stylesheet">
+  <link rel="shortcut icon" href="./src/Assets/favicon.ico" type="image/x-icon">
+  <meta name="description"
+    content="A dynamic web application for tracking and displaying basketball game scores between two Teams.">
+  <link rel="stylesheet" href="./src/style.css">
+  <script src="./src/app.js" type="module" defer></script>
+  <title>Basketball Scoreboard</title>
+</head>
+
+<body>
+  <main class="container">
+    <div class="home">
+      <h2 class="team__title">Home</h2>
+      <div class="score__container" id="teamA">
+        <p class="score score-h">0</p>
+      </div>
+      <div class="buttons">
+        <button data-action="home-addOne" class="btn btn-primary">+1</button>
+        <button data-action="home-addTwo" class="btn btn-primary">+2</button>
+        <button data-action="home-addThree" class="btn btn-primary">+3</button>
+      </div>
+    </div>
+    <div class="guest">
+      <h2 class="team__title">Guest</h2>
+      <div class="score__container" id="teamB">
+        <p class="score score-g">0</p>
+      </div>
+      <div class="buttons">
+        <button data-action="guest-addOne" class="btn btn-primary">+1</button>
+        <button data-action="guest-addTwo" class="btn btn-primary">+2</button>
+        <button data-action="guest-addThree" class="btn btn-primary">+3</button>
+      </div>
+    </div>
+    <button data-action="new-game" class="btn btn-secondary">New Game</button>
+  </main>
+</body>
+
+</html>
