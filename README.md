@@ -8,6 +8,7 @@
   - [Demo](#demo)
   - [Technologies Used](#technologies-used)
   - [How to Use](#how-to-use)
+  - [Contributing](#contributing)
   - [License](#license)
 
 ## Project Overview
@@ -62,6 +63,10 @@ npm run dev
 ```
 
 This command will launch a development server, and you'll be able to view the website locally in your web browser.
+
+## Contributing
+
+If you would like to contribute to this repository, feel free to open issues or submit pull requests. Contributions and improvements are always welcome.
 
 ## License
 
